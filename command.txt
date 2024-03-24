@@ -1,0 +1,4 @@
+fvm flutter test test/dashboard_golden_test.dart --update-golden
+
+
+

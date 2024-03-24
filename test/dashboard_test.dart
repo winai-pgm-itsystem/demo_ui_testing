@@ -15,7 +15,7 @@ void main() {
           home: DashBoardScreen(userType: 'User'),
         ));
 
-        await tester.tap(find.text('Activiaty'));
+        await tester.tap(find.text('Activity'));
         await tester.pumpWidget(const MaterialApp(home: MascotScreen()));
         expect(find.byType(MascotScreen), findsOneWidget);
       });
@@ -25,7 +25,7 @@ void main() {
           home: DashBoardScreen(userType: 'Admin'),
         ));
 
-        await tester.tap(find.text('Activiaty'));
+        await tester.tap(find.text('Activity'));
 
         await tester.pumpWidget(const MaterialApp(home: MascotScreen()));
         expect(find.byType(MascotScreen), findsOneWidget);
@@ -42,7 +42,7 @@ void main() {
 
         expect(find.text('Balance'), findsOneWidget);
 
-        expect(find.text('Activiaty'), findsOneWidget);
+        expect(find.text('Activity'), findsOneWidget);
 
         expect(find.byType(CardTextWidget), findsNWidgets(3));
         expect(find.byType(CardPercentageWidget), findsNWidgets(3));

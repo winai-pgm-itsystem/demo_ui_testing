@@ -16,6 +16,7 @@ void main() {
 
     await tester.tap(find.byKey(const Key('btn_login')));
     await tester.pumpAndSettle();
+
     expect(find.byType(DashBoardScreen), findsOneWidget);
   });
 }
