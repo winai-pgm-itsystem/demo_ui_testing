@@ -1,4 +1,5 @@
-fvm flutter test test/dashboard_golden_test.dart --update-golden
+fvm flutter test test/dashboard_golden_test.dart --update-goldens
 
 
 
+python test/appium_test_demo.py
